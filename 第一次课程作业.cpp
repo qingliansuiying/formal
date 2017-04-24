@@ -57,6 +57,15 @@ void randomOperation()    //生成随机符号
 void generateExpression()     //输出随机式子，此部分有待补充
 {
 	cout<<num[1]<<sig[1]<<num[2]<<sig[2]<<num[3]<<sig[3]<<num[4]<<'=';
+
+	/*switch(type)                     打算用一个随机数控制输出随机式子，与calculateResult() 配套使用
+	{
+	case 0:cout<<num[1]<<sig[1]<<num[2]<<sig[2]<<num[3]<<sig[3]<<num[4]<<'=';break;
+	case:1:cout<<'('<<num[1]<<sig[1]<<num[2]<<')'<<sig[2]<<num[3]<<sig[3]<<num[4]<<'=';break;
+	case:2:cout<<num[1]<<sig[1]<<num[2]<<sig[2]<<'('<<num[3]<<sig[3]<<num[4]<<')'<<'=';break;
+    default:3:cout<<'('<<num[1]<<sig[1]<<num[2]<<')'<<sig[2]<<'('<<num[3]<<sig[3]<<num[4]<<')<<'=';
+	}
+	*/
 }
 void calculateResult()      //计算生成的随机式子的结果，此部分有待补充
 {
@@ -157,4 +166,5 @@ int main()           //主函数
 	print();
 	return 0;
 }
+
 
