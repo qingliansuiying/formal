@@ -4,7 +4,7 @@
 using namespace std;
 int sum,turn=0,answer,correct,rig=0,wro=0,flag=0,num[5],test0=0;
 char sig[4];
-void scan()
+void scan()            //用于和用户交互
 {
 	if(turn==0)
 	{
@@ -27,8 +27,8 @@ void scan()
 		}
 
 	}
-}
-void randomNumber()
+} 
+void randomNumber()          //生成随机数
 {
 	int j;
 	srand(time(0));
@@ -38,7 +38,7 @@ void randomNumber()
 	}
 
 }
-void randomOperation()
+void randomOperation()    //生成随机符号
 {
 	srand(time(0));
 	int choose,j;
@@ -54,11 +54,11 @@ void randomOperation()
 		}
 	}
 }
-void generateExpression()
+void generateExpression()     //输出随机式子，此部分有待补充
 {
 	cout<<num[1]<<sig[1]<<num[2]<<sig[2]<<num[3]<<sig[3]<<num[4]<<'=';
 }
-void calculateResult()
+void calculateResult()      //计算生成的随机式子的结果，此部分有待补充
 {
 
 	sig[0]='*';
@@ -124,13 +124,13 @@ void calculateResult()
 		flag=1;
 }
 
-void print()
-{
+void print()                //输出统计结果
+{ 
 	cout<<"正确题数："<<rig<<endl;
 	cout<<"错误题数："<<wro<<endl;
 }
 
-int main()
+int main()           //主函数
 {
 	int i;
 	scan();
