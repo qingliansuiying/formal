@@ -7,7 +7,7 @@ float num[5];
 char sig[4];
 void scan()            //用于和用户交互
 {
-	if(turn==0)                              //用turn控制scan部分的输出，进行初始界面和与用户交互界面的切换
+	if(turn==0)                              //用turn控制scan部分的输出，进行初始界面和与用户交互界面的切换.
 	{
 		cout<<"Welcome!"<<endl;
 		cout<<"请输入你想要的题目数量："<<endl;
