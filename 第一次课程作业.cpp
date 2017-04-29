@@ -2,7 +2,7 @@
 #include<ctime>
 #include<stdlib.h>
 using namespace std;
-int sum,turn=0,answer,correct,rig=0,wro=0,flag=0;    //answer，用于接收用户输入的答案，correct用于存储计算所得正确答案，flag用于检测生成式子是否符合要求
+int sum,turn=0,answer,correct,rig=0,wro=0,flag=0;    //answer用于接收用户输入的答案，correct用于存储计算所得正确答案，flag用于检测生成式子是否符合要求，rig，wro统计正误题数
 float num[5];
 char sig[4];
 void scan()            //用于和用户交互
